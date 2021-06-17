@@ -11,6 +11,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  overflow-x: hidden;
 }
 
 a {
@@ -234,8 +235,6 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   position: absolute;
   top: 55px;
-  right: 15px;
-  bottom: 15px;
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
@@ -367,6 +366,9 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     margin-bottom: 30px;
   }
+  body {
+    font-size: 2.7vw;
+  }
 }
 
 @-webkit-keyframes up-down {
@@ -442,6 +444,9 @@ section {
   .section-title span {
     font-size: 38px;
   }
+  body {
+    font-size: 2.7vw;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -501,6 +506,9 @@ section {
   }
   .breadcrumbs ol li {
     display: inline-block;
+  }
+  body {
+    font-size: 2.7vw;
   }
 }
 
@@ -846,14 +854,21 @@ section {
 --------------------------------------------------------------*/
 .portfolio #portfolio-flters {
   list-style: none;
-  margin-bottom: 5px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1080px) and (min-width: 360px) {
+  .portfolio ul {
+    width: -20%;
+  }
 }
 
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
   margin: 0 5px 5px 5px;
-  font-size: 15px;
+  text-align: center;
+  font-size: 1.6vw;
   font-weight: 600;
   line-height: 1;
   padding: 7px 5px;
